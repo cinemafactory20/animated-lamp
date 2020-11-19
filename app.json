@@ -1,0 +1,91 @@
+{
+  "name": "screen shot generator",
+  "description": "Telegram's best and multi feature screen shot bot!",
+  "keywords": [
+    "telegram",
+    "best",
+    "Screen shot",
+    "Generator",
+    "3"
+  ],
+  "repository": "https://github.com/cinemafactory20/animated-lamp",
+  "env": {
+    "ENV": {
+      "description": "API_ID(required) - Get your telegram API_ID from https://my.telegram.org/",
+      "value": "API ID"
+    },
+    "TOKEN": {
+      "description": "Your bot token, as a string.get this from @botfather",
+      "value": "1182010778:AAFqXXg3CxLSKrQl9VgaLG9OuV0v-dPT1DQ"
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "1058885931"
+    },
+    "
+LOG_CHANNEL(required) ": {
+      "description": "
+Log channel 'id' get this on @my_id_bot ",
+      "value": ""
+    },
+    "DATABASE_URL(required)": {
+      "description": "Mongodb database URI",
+      "value": "mongodb url"
+    },
+    "AUTH_USERS(required)": {
+      "description": "Admin(s) of the bot. User's telegram id separated by space. Atleast one id should be specified",
+      "value": "1058885931 1012124014 1070038621"
+    },
+    "HOST(required)": {
+      "description": "Public URL of file streaming service (See Setting up Streaming Service)",
+      "value": "http://localhost:8080)",
+      "required": true
+    },
+    " SESSION_NAME(optional)  ": {
+      "description": " SESSION_NAME(optional) - Name you want to call your bot's session, Eg: bot's username ",
+      "value": "@screenshot_bot"
+    },
+    " MAX_PROCESSES_PER_USER(optional) ": {
+      "description": " Number of parallel processes each user can have, defaults to 2 ",
+      "value": "2"
+    },
+    " MAX_TRIM_DURATION(optional) ": {
+      "description": " Maximum allowed video trim duration in seconds. Defaults to 600s ",
+      "value": "600"
+    }, 
+    "DONATION_LINK": {
+      "description": "Optional: link where you would like to receive donations.",
+      "value": "https://www.paypal.me/naseefw"
+    },
+    "Track_channel": {
+      "description": " User activity tracking channel's id. Only needed if you want to track and block any user. Disabled by default ",
+      "value": "channel Id"
+    },
+    "slow_speed_delay": {
+      "description": "delay required between each interaction",
+      "value": "5s"
+    },
+    "Time_out": {
+      "description": " Maximum time alloted to each process in seconds, after which process will be cancelled. Defaults to 1800s(30 mins).
+",
+      "value": "1800s"
+    },
+    "DEBUG": {
+      "description": " Set some value to use DEBUG logging level. INFO by default. ",
+      "value": ""
+    },
+    "Iam_header": {
+      "description": " Authentication token for streaming service. Defaults to ",
+      "value": "",
+      "required": false
+   }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
